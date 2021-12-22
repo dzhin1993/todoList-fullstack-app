@@ -1,0 +1,12 @@
+export const GET_TASKS = 'GET_TASKS';
+export const ADD_TASK = 'ADD_TASK';
+export const UPDATE_TASK = 'UPDATE_TASK';
+export const REMOVE_TASK = 'REMOVE_TASK';
+export const COMPLETE_TASK = 'COMPLETE_TASK';
+export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
+export const REGISTER_FAIL = 'REGISTER_FAIL';
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_FAIL = 'LOGIN_FAIL';
+export const LOGOUT = 'LOGOUT';
+export const SET_MESSAGE = 'SET_MESSAGE';
+export const CLEAR_MESSAGE = 'CLEAR_MESSAGE';
