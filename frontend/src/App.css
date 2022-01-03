@@ -9,9 +9,21 @@ body {
     text-align: center;
 }
 
+.table-wrapper {
+    min-width: 1000px;
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
 .login-container {
-    margin: 150px auto 2em;
+    margin: 150px auto;
     width: 540px;
+}
+
+table.table-striped.table-hover tbody tr:hover {
+    background: #f5f5f5;
 }
 
 .login-container form {
