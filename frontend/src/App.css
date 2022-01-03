@@ -1,3 +1,10 @@
+body {
+    color: #566787;
+    background: #f5f5f5;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+}
+
 .App {
     text-align: center;
 }
@@ -29,4 +36,14 @@
     padding: 1.5%;
     border: none;
     cursor: pointer;
+}
+
+.delete-button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.delete-icon {
+    color: #dc3545;
 }

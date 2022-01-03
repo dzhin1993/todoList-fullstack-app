@@ -16,12 +16,16 @@ function DataTable({ items, deleteTask, updateTask, completeTask }) {
                 </td>
                 <td>
                     <div style={{width: "110px"}}>
-                        <Button color="danger" onClick={() => deleteTask(id)}>Del</Button>
+                        <button className="delete-button" onClick={() => deleteTask(id)}>
+                            <i className="material-icons delete-icon">&#xE5C9;</i>
+                        </button>
                     </div>
                 </td>
                 <td>
-                    <div style={{width: "110px"}}>
-                        <ModalForm buttonLabel="Edit" item={item} updateTask={updateTask}/>
+                    <div className="edit-button" style={{width: "110px"}}>
+                        <ModalForm buttonLabel="Edit" item={item} updateTask={updateTask}>
+                           {/* <i className="material-icons">&#xE8B8;</i>*/}
+                        </ModalForm>
                     </div>
                 </td>
             </tr>
