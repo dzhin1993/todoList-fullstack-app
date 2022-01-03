@@ -1,0 +1,12 @@
+version: "3"
+services:
+  api:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    container_name: todo-api
+  client:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    container_name: todo-client
