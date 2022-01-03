@@ -1,4 +1,4 @@
-package com.zhinkoilya1993.backend.Controller;
+package com.zhinkoilya1993.backend.controller;
 
 import com.zhinkoilya1993.backend.model.Task;
 import com.zhinkoilya1993.backend.service.TodoService;

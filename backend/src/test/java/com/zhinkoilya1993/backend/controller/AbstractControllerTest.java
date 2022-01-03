@@ -1,8 +1,7 @@
-package com.zhinkoilya1993.backend.Controller;
+package com.zhinkoilya1993.backend.controller;
 
 import com.zhinkoilya1993.backend.service.TodoService;
 import com.zhinkoilya1993.backend.to.LoginRequest;
-import com.zhinkoilya1993.backend.util.JsonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;

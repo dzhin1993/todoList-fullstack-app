@@ -1,4 +1,4 @@
-package com.zhinkoilya1993.backend.Controller;
+package com.zhinkoilya1993.backend.controller;
 
 import com.zhinkoilya1993.backend.model.Task;
 import org.junit.jupiter.api.Assertions;
@@ -7,7 +7,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import static com.zhinkoilya1993.backend.Controller.TodoItemController.URL;
+import static com.zhinkoilya1993.backend.controller.TodoItemController.URL;
 import static com.zhinkoilya1993.backend.TestData.*;
 import static com.zhinkoilya1993.backend.util.JsonUtil.writeValue;
 import static com.zhinkoilya1993.backend.util.TestUtil.readFromJson;

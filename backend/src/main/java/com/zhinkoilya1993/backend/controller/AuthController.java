@@ -1,4 +1,4 @@
-package com.zhinkoilya1993.backend.Controller;
+package com.zhinkoilya1993.backend.controller;
 
 import com.zhinkoilya1993.backend.service.UserService;
 import com.zhinkoilya1993.backend.to.LoginRequest;
