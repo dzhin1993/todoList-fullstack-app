@@ -17,18 +17,14 @@ function DataTable({ items, deleteTask, updateTask, completeTask }) {
                            onChange={(e) => completeTask(id, e.target.checked)}/>
                 </td>
                 <td>
-                    <div style={{width: "110px"}}>
+                    <div>
                         <button className="delete-button" onClick={() => deleteTask(id)}>
                             <i className="material-icons delete-icon">&#xE5C9;</i>
                         </button>
                     </div>
                 </td>
                 <td>
-                    <div className="edit-button" style={{width: "110px"}}>
-                        <ModalForm buttonLabel="Edit" item={item} updateTask={updateTask}>
-                           {/* <i className="material-icons">&#xE8B8;</i>*/}
-                        </ModalForm>
-                    </div>
+                    <ModalForm buttonLabel="Edit" item={item} updateTask={updateTask}/>
                 </td>
             </tr>
         )
@@ -36,6 +32,16 @@ function DataTable({ items, deleteTask, updateTask, completeTask }) {
 
     return (
         <div className="table-wrapper">
+            <div className="table-title">
+                <div className="row">
+                    <div className="col-sm-5">
+                        <h2>Todo list <b>Management</b></h2>
+                    </div>
+                    <div className="col-sm-7">
+                        <button  className="btn btn-secondary"><i className="material-icons">&#xE147;</i> <span>Add New Item</span></button>
+                    </div>
+                </div>
+            </div>
             <table className="table table-striped table-hover">
                 <thead>
                 <tr>
