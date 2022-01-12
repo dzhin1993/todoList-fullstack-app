@@ -18,25 +18,29 @@ class ModalForm extends Component {
     }
 
     render() {
-        const closeBtn = <Button color={"danger"} className="close" onClick={this.toggle}>&times;</Button>
+        let toggle = this.toggle;
+        const closeBtn = <Button color={"danger"} className="close" onClick={toggle}>&times;</Button>
 
-        let button =
-            <Button color="warning" onClick={this.toggle} style={{float: "left", marginRight: "10px"}}>
-                {this.props.buttonLabel}
-            </Button>
+        let addButton = <button className="btn btn-secondary" onClick={toggle}>
+            <i className="material-icons">&#xE147;</i> <span>Add New Item</span>
+        </button>
+
+        let editButton = <button className="edit-delete-button" onClick={toggle}>
+            <i className="material-icons">&#xE8B8;</i>
+        </button>
 
         const {addTask, updateTask, item} = this.props;
 
         return (
             <div>
-                {button}
-                <Modal isOpen={this.state.modal} toggle={this.toggle}>
-                    <ModalHeader toggle={this.toggle} close={closeBtn}>Edit item</ModalHeader>
+                {item ? editButton : addButton}
+                <Modal isOpen={this.state.modal} toggle={toggle}>
+                    <ModalHeader toggle={toggle} close={closeBtn}>Edit item</ModalHeader>
                     <ModalBody>
                         <AddOrEditForm
                             addTask={addTask}
                             updateTask={updateTask}
-                            toggle={this.toggle}
+                            toggle={toggle}
                             item={item}/>
                     </ModalBody>
                 </Modal>

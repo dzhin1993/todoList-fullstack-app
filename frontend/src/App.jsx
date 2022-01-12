@@ -14,7 +14,7 @@ import Register from "./components/Register";
 function App() {
     return (
         <Provider store={store}>
-            <div className="App">
+
                 <Router>
                     <Switch>
                         <Route exact path={["/", "/login"]} component={Login}/>
@@ -22,7 +22,7 @@ function App() {
                         <PrivateRoute exact path={["/todoList"]} component={ListTasks}/>
                     </Switch>
                 </Router>
-            </div>
+
         </Provider>
     );
 }

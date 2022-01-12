@@ -11,7 +11,6 @@ import {
 } from "../actions/auth";
 
 import DataTable from '../components/DataTable';
-import ModalForm from "../components/Modal";
 
 class TodoListContainer extends Component {
 
@@ -44,12 +43,8 @@ class TodoListContainer extends Component {
                         <DataTable items={items}
                                    updateTask={updateTask}
                                    deleteTask={deleteTask}
+                                   addTask={addTask}
                                    completeTask={completeTask}/>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                       <ModalForm buttonLabel="Add" addTask={addTask}/>
                     </Col>
                 </Row>
             </Container>

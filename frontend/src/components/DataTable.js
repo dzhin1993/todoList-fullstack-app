@@ -3,7 +3,7 @@ import {Table, Button, Input} from 'reactstrap';
 
 import ModalForm from "./Modal";
 
-function DataTable({ items, deleteTask, updateTask, completeTask }) {
+function DataTable({ items, deleteTask, updateTask, completeTask, addTask }) {
     let count = 0;
     const itemsList = items.map(item => {
         const { id, name, dateTime, completed } = item;
@@ -18,7 +18,7 @@ function DataTable({ items, deleteTask, updateTask, completeTask }) {
                 </td>
                 <td>
                     <div>
-                        <button className="delete-button" onClick={() => deleteTask(id)}>
+                        <button className="edit-delete-button" onClick={() => deleteTask(id)}>
                             <i className="material-icons delete-icon">&#xE5C9;</i>
                         </button>
                     </div>
@@ -38,7 +38,7 @@ function DataTable({ items, deleteTask, updateTask, completeTask }) {
                         <h2>Todo list <b>Management</b></h2>
                     </div>
                     <div className="col-sm-7">
-                        <button  className="btn btn-secondary"><i className="material-icons">&#xE147;</i> <span>Add New Item</span></button>
+                        <ModalForm buttonLabel="Add" addTask={addTask}/>
                     </div>
                 </div>
             </div>
